@@ -2667,7 +2667,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3630720620809370192}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02a78494f6cd73d419477356634711be, type: 3}
+  m_Script: {fileID: 11500000, guid: fa80126e86cdd7f4694709795f7ab979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PuppetMaster: {fileID: 7076652244391390049}
@@ -4225,7 +4225,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6474822697948749264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02a78494f6cd73d419477356634711be, type: 3}
+  m_Script: {fileID: 11500000, guid: fa80126e86cdd7f4694709795f7ab979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PuppetMaster: {fileID: 7076652244391390049}
@@ -4630,8 +4630,8 @@ GameObject:
   m_Component:
   - component: {fileID: 181337648491557529}
   - component: {fileID: 5170175260977742662}
-  - component: {fileID: 8240749423318961048}
   - component: {fileID: -6831932779955050120}
+  - component: {fileID: 2847644764851599198}
   m_Layer: 0
   m_Name: Zombie3 Root
   m_TagString: Zombie
@@ -4679,22 +4679,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &8240749423318961048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6956279409534414082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a17d9816ba3eb24193eb6105593fb34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  puppetMaster: {fileID: 7076652244391390049}
-  health: 100
-  healthBar: {fileID: 3850953931545849037}
-  isDead: 0
 --- !u!82 &-6831932779955050120
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4791,6 +4775,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2847644764851599198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6956279409534414082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 927fa39dfa9efe146b5451f6eed4e45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puppetMaster: {fileID: 7076652244391390049}
+  health: 0
+  healthBar: {fileID: 3850953931545849037}
+  isDead: 0
+  difficultyLevel: 
 --- !u!1 &6975495176454389441
 GameObject:
   m_ObjectHideFlags: 0

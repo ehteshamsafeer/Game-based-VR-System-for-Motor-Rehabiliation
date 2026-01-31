@@ -50,6 +50,7 @@ public class BiofeedbackConnection : MonoBehaviour
                 }
                 else
                 {
+                    if (biofeedbackValue != null)
                     biofeedbackValue.text = "Not Connected";
                 }
             }

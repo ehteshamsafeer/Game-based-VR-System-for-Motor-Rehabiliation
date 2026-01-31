@@ -341,7 +341,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3961007224442145340}
-  - component: {fileID: 1259646967293875810}
   - component: {fileID: 4717269955605739889}
   m_Layer: 0
   m_Name: WholeBirdRaw
@@ -372,19 +371,6 @@ Transform:
   - {fileID: 7202081531322059290}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1259646967293875810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4446042087989776518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 498bc55d0d546e44fbff05dbc9fb722e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
 --- !u!65 &4717269955605739889
 BoxCollider:
   m_ObjectHideFlags: 0

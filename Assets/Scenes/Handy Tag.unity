@@ -9637,18 +9637,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610890459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.709}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1808487773}
   m_Father: {fileID: 1503330962}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.164}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &610890461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9688,7 +9688,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &610890463
 Canvas:
   m_ObjectHideFlags: 0
@@ -9698,8 +9698,8 @@ Canvas:
   m_GameObject: {fileID: 610890459}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 2
+  m_Camera: {fileID: 1503330966}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
@@ -10274,7 +10274,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 667502774}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8affd443e2a76524d90b8c633d5b86dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 92c9e95fa99d4c84d9146247ef1256b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   xrOrigin: {fileID: 728211364}
@@ -20201,15 +20201,15 @@ RectTransform:
   m_GameObject: {fileID: 1808487772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.76, y: 1.76, z: 1.76}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 610890460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -567, y: 462}
-  m_SizeDelta: {x: 400.1598, y: 50}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.17500001}
+  m_SizeDelta: {x: 0, y: 0.35000002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1808487774
 MonoBehaviour:
@@ -20231,7 +20231,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Chickens Left: '
+  m_text: Chickens Left
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -20258,14 +20258,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 0.1
+  m_fontSizeBase: 0.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -20294,7 +20294,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 0.17352247}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -21303,7 +21303,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2034139177}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b29d1697807f5f441997d07e1fa173b0, type: 3}
+  m_Script: {fileID: 11500000, guid: 44a304bb15fccf34eba947bbc0332a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
@@ -21333,14 +21333,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2034139177}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6abbe1f3854caa46b90a130866d9a6f, type: 3}
+  m_Script: {fileID: 11500000, guid: 955fb963adfa8184984dbca132d20ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ChickensTransformParent: {fileID: 1769238197}
   ChickenObject: {fileID: 4446042087989776518, guid: 4a12da31d38b2ee438747a5ca82ed7ce,
     type: 3}
-  ChickenCount: 0
-  difficultyLevel: 1
+  ChickenCount: 8
+  difficultyLevel: 
 --- !u!4 &2038791525 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1127814502916352510, guid: 978ecd98683fc62408a08986f262e5bc,

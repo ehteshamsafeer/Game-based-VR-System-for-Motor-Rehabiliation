@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,12 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &3828439 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1618441920446110652, guid: ba3ba2abdc8bf6944ac6a467cd236952,
-    type: 3}
-  m_PrefabInstance: {fileID: 1657911616}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8157131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4481,25 +4475,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be870f62028e4943a3d5b354303ac70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletfirepoint: {fileID: 3828439}
-  bullet: {fileID: 7861393299245591410, guid: 05368f0997e54a24f9b064d49e6f0a44, type: 3}
-  triggerButton:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Trigger Button
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 96d95e16-1247-4319-ac20-49d2079b8ed9
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
-  controller: {fileID: 1125182729}
-  shootPoint: {fileID: 3828439}
-  gunAnimator: {fileID: 1753118323}
-  disperseBullet: 0.33
 --- !u!82 &837133014
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9663,12 +9638,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1657911616}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1753118323 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2170005241240761127, guid: ba3ba2abdc8bf6944ac6a467cd236952,
-    type: 3}
-  m_PrefabInstance: {fileID: 1657911616}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1754922793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10400,8 +10369,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1840407922}
-  - component: {fileID: 1840407923}
   - component: {fileID: 1840407924}
+  - component: {fileID: 1840407925}
   m_Layer: 0
   m_Name: Zombie Shooter Manager
   m_TagString: Untagged
@@ -10425,23 +10394,6 @@ Transform:
   - {fileID: 2137490904}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1840407923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840407921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd3170142f1421543895e45917bc24d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zombiePrefab: {fileID: 6956279409534414082, guid: 86f50783d7199334690b95c16c70e51a,
-    type: 3}
-  zombieTransform: {fileID: 2137490904}
-  scoreText: {fileID: 2110435985}
-  zombieSpawnEffects: {fileID: 1963209666}
 --- !u!82 &1840407924
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10538,6 +10490,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1840407925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840407921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf359831cb4924c4f800826487912d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombiePrefab: {fileID: 6956279409534414082, guid: 86f50783d7199334690b95c16c70e51a,
+    type: 3}
+  zombieTransform: {fileID: 2137490904}
+  scoreText: {fileID: 2110435985}
+  zombieSpawnEffects: {fileID: 1963209666}
 --- !u!1 &1874823537
 GameObject:
   m_ObjectHideFlags: 0
@@ -12271,11 +12240,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2121535080}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8997779fbba5bbf4b9d34040874fa656, type: 3}
+  m_Script: {fileID: 11500000, guid: c37cdfe1e2803f541b6835d0f481b3cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pistolMechanicsScript: {fileID: 837133013}
-  sensorRate: {fileID: 444538057}
+  biofeedbackValue: {fileID: 0}
+  emgValues: 0
 --- !u!4 &2121535082
 Transform:
   m_ObjectHideFlags: 0

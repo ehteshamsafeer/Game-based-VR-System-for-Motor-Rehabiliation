@@ -1063,13 +1063,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 107915724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b52becab92f40749b7d88a7ebae3774, type: 3}
+  m_Script: {fileID: 11500000, guid: 56f2e17169e18984ba07c7818c564014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xrController: {fileID: 1310080585}
-  lockXRotation: 1
-  lockYRotation: 0
-  lockZRotation: 1
+  LeftController: {fileID: 1310080587}
+  intensity: 0.5
+  duration: 0.2
+  RightHand: {fileID: 991740}
 --- !u!65 &107915727
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1100,7 +1100,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 107915724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 592457388e6a945408a44bb88ba72a0e, type: 3}
+  m_Script: {fileID: 11500000, guid: 530bc6318bc464247b25c292fb6757ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   aud: {fileID: 1575131112}
@@ -1110,7 +1110,7 @@ MonoBehaviour:
   rotDamping: 0.9
   target: {fileID: 1310080585}
   playerRigidbody: {fileID: 728211368}
-  climbForce: 800
+  climbForce: 1000
   climbDrag: 500
 --- !u!54 &107915729
 Rigidbody:
@@ -8272,10 +8272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b52becab92f40749b7d88a7ebae3774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xrController: {fileID: 142955383}
-  lockXRotation: 1
-  lockYRotation: 0
-  lockZRotation: 1
 --- !u!1001 &431657000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10533,7 +10529,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8affd443e2a76524d90b8c633d5b86dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xrOrigin: {fileID: 728211364}
 --- !u!1001 &668617673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21545,7 +21540,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2034139179}
-  - component: {fileID: 2034139178}
   - component: {fileID: 2034139180}
   m_Layer: 0
   m_Name: HandyTagManager
@@ -21554,21 +21548,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2034139178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034139177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b29d1697807f5f441997d07e1fa173b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  killLeft: 0
-  leftChickenNum: {fileID: 1808487774}
 --- !u!4 &2034139179
 Transform:
   m_ObjectHideFlags: 0
@@ -21593,14 +21572,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2034139177}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6abbe1f3854caa46b90a130866d9a6f, type: 3}
+  m_Script: {fileID: 11500000, guid: 44a304bb15fccf34eba947bbc0332a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChickensTransformParent: {fileID: 1769238197}
-  ChickenObject: {fileID: 4446042087989776518, guid: 4a12da31d38b2ee438747a5ca82ed7ce,
-    type: 3}
-  ChickenCount: 0
-  difficultyLevel: 1
+  score: 0
+  killLeft: 0
+  leftChickenNum: {fileID: 1808487774}
 --- !u!4 &2038791525 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1127814502916352510, guid: 978ecd98683fc62408a08986f262e5bc,
@@ -22668,7 +22645,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7360765595593695128}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 592457388e6a945408a44bb88ba72a0e, type: 3}
+  m_Script: {fileID: 11500000, guid: 530bc6318bc464247b25c292fb6757ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   aud: {fileID: 1575131112}
@@ -22676,9 +22653,9 @@ MonoBehaviour:
   damping: 1
   rotFrequency: 100
   rotDamping: 0.9
-  target: {fileID: 142955383}
-  playerRigidbody: {fileID: 728211368}
-  climbForce: 800
+  target: {fileID: 0}
+  playerRigidbody: {fileID: 0}
+  climbForce: 1000
   climbDrag: 500
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
